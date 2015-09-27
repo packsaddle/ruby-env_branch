@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
     'Get BRANCH from environment variables.'
   spec.description   =
     'Get BRANCH from environment variables.'
-  spec.homepage      = "https://github.com/packsaddle/ruby-env_branch"
+  spec.homepage      = 'https://github.com/packsaddle/ruby-env_branch'
   spec.license       = 'MIT'
 
   spec.files         =
