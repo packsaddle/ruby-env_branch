@@ -1,0 +1,17 @@
+PATH
+  remote: ../
+  specs:
+    env_branch (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  env_branch!
+
+BUNDLED WITH
+   1.10.6
