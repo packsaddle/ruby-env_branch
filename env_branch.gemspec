@@ -10,9 +10,9 @@ Gem::Specification.new do |spec|
   spec.email         = ['o.gata.ken@gmail.com']
 
   spec.summary       =
-    'TODO: Write a short summary, because Rubygems requires one.'
+    'Get BRANCH from environment variables.'
   spec.description   =
-    'TODO: Write a longer description or delete this line.'
+    'Get BRANCH from environment variables.'
   spec.homepage      = "https://github.com/packsaddle/ruby-env_branch"
   spec.license       = 'MIT'
 
