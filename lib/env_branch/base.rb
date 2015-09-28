@@ -2,8 +2,13 @@ module EnvBranch
   class Base
     attr_reader :branch_name
 
-    def initialize
-      @branch_name = fetch_branch_name
+    def initialize(&block)
+      @branch_name =
+        if block_given?
+          block.call || fetch_branch_name
+        else
+          fetch_branch_name
+        end
     end
 
     # travis-ci.org:
