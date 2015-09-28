@@ -1,3 +1,6 @@
+# CAUTION: DO NOT ADD encrypted value!
+#          test/test_test_helper.rb asserts ENV.
+#          And this will show ENV accidentally in CI log.
 language: "ruby"
 rvm:
   - "1.9"
