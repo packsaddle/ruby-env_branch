@@ -10,9 +10,9 @@ Gem::Specification.new do |spec|
   spec.email         = ['o.gata.ken@gmail.com']
 
   spec.summary       =
-    'Get BRANCH from environment variables.'
+    'Get BRANCH_NAME from environment variables.'
   spec.description   =
-    'Get BRANCH from environment variables.'
+    'Get BRANCH_NAME from environment variables.'
   spec.homepage      = 'https://github.com/packsaddle/ruby-env_branch'
   spec.license       = 'MIT'
 
