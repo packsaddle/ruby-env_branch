@@ -41,12 +41,15 @@ module EnvBranch
     # circleci.com:
     #   ENV['CIRCLE_BRANCH']
     #
+    # @return [String, nil] branch name or nil
+    #
+    # @see TestHelper.stash_env_branch
+    # @see TestHelper.restore_env_branch
+    #
     # @see http://docs.travis-ci.com/user/environment-variables/#Default-Environment-Variables
     #   Environment Variables - Travis CI
     # @see https://circleci.com/docs/environment-variables#build-details
     #   Environment variables - CircleCI
-    #
-    # @return [String, nil] branch name or nil
     def fetch_branch_name
       if ENV['TRAVIS_BRANCH'] && !ENV['TRAVIS_BRANCH'].empty?
         ENV['TRAVIS_BRANCH']
