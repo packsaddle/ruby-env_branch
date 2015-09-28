@@ -33,5 +33,27 @@ module EnvBranch
         end
       end
     end
+
+    sub_test_case 'circle-ci' do
+      branch_name = 'your-branch'
+      setup do
+        ENV['CIRCLE_BRANCH'] = branch_name
+      end
+
+      teardown do
+        ENV.delete 'CIRCLE_BRANCH'
+      end
+
+      test '#branch?' do
+        assert do
+          EnvBranch.new.branch? == true
+        end
+      end
+      test '#pull_request_id' do
+        assert do
+          EnvBranch.new.branch_name == branch_name
+        end
+      end
+    end
   end
 end
