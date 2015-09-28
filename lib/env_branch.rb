@@ -1,5 +1,8 @@
+require 'env_branch/base'
 require 'env_branch/version'
 
 module EnvBranch
-  # Your code goes here...
+  def self.new
+    Base.new
+  end
 end
