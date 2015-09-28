@@ -16,3 +16,5 @@ before_install:
   - "bin/setup"
 before_script:
   - "printenv"
+after_script:
+  - "printenv"
