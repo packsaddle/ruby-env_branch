@@ -1,3 +1,13 @@
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/packsaddle/ruby-env_branch/compare/v0.1.1...v0.2.0) (2015-09-28)
+
+
+### Features
+
+* **block:** build env branch with block ([83dd640](https://github.com/packsaddle/ruby-env_branch/commit/83dd640))
+
+
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://github.com/packsaddle/ruby-env_branch/compare/v0.1.0...v0.1.1) (2015-09-28)
 
