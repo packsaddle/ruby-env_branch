@@ -1,3 +1,13 @@
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/packsaddle/ruby-env_branch/compare/v0.1.0...v0.1.1) (2015-09-28)
+
+
+### Features
+
+* **circleci:** add circle ci branch ([7450d53](https://github.com/packsaddle/ruby-env_branch/commit/7450d53))
+
+
+
 <a name="0.1.0"></a>
 # [0.1.0](https://github.com/packsaddle/ruby-env_branch/compare/v0.0.1...v0.1.0) (2015-09-28)
 
