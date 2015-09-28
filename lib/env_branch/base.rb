@@ -1,7 +1,30 @@
 module EnvBranch
+  # Branch information object from environment variable
   class Base
     attr_reader :branch_name
+    # @!attribute [r] branch_name
+    #   @return [String, nil] branch name or nil
 
+    # Build branch information object from environment variables
+    #
+    # @overload initialize
+    #   @example without user defined block
+    #     env_branch = EnvBranch::Base.new
+    #
+    #   @return [Base] Branch information object
+    #
+    # @overload initialize(&block)
+    #   @example with user defined block
+    #     env_branch =
+    #       EnvBranch::Base.new do
+    #         if ENV['USER_DEFINED_BRANCH'] &&
+    #           !ENV['USER_DEFINED_BRANCH'].empty?
+    #           ENV['USER_DEFINED_BRANCH']
+    #         end
+    #       end
+    #
+    #   @yield user defined block
+    #   @return [Base] Branch information object
     def initialize(&block)
       @branch_name =
         if block_given?
@@ -11,6 +34,8 @@ module EnvBranch
         end
     end
 
+    # Fetch branch name from environment variables
+    #
     # travis-ci.org:
     #   ENV['TRAVIS_BRANCH']
     # circleci.com:
@@ -20,6 +45,8 @@ module EnvBranch
     #   Environment Variables - Travis CI
     # @see https://circleci.com/docs/environment-variables#build-details
     #   Environment variables - CircleCI
+    #
+    # @return [String, nil] branch name or nil
     def fetch_branch_name
       if ENV['TRAVIS_BRANCH'] && !ENV['TRAVIS_BRANCH'].empty?
         ENV['TRAVIS_BRANCH']
@@ -28,6 +55,7 @@ module EnvBranch
       end
     end
 
+    # @return [Boolean] true if this has branch name
     def branch?
       !branch_name.nil?
     end
