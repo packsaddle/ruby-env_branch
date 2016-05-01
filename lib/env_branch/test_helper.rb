@@ -44,8 +44,10 @@ module EnvBranch
     #
     # @see Base#fetch_branch_name
     def restore_env_branch
-      ENV['TRAVIS_BRANCH'] = @original_travis_branch
-      ENV['CIRCLE_BRANCH'] = @original_circle_branch
+      original_travis_branch = (defined?(@original_travis_branch) && @original_travis_branch) || nil
+      original_circle_branch = (defined?(@original_circle_branch) && @original_circle_branch) || nil
+      ENV['TRAVIS_BRANCH'] = original_travis_branch
+      ENV['CIRCLE_BRANCH'] = original_circle_branch
     end
   end
 end
