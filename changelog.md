@@ -1,3 +1,9 @@
+<a name="0.2.2"></a>
+## [0.2.2](https://github.com/packsaddle/ruby-env_branch/compare/v0.2.1...v0.2.2) (2016-05-01)
+
+* Remove warning about instance variable.
+
+
 <a name="0.2.1"></a>
 ## [0.2.1](https://github.com/packsaddle/ruby-env_branch/compare/v0.2.0...v0.2.1) (2015-09-28)
 
