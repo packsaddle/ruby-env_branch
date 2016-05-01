@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
     `git ls-files -z`
     .split("\x0")
     .reject { |f| f.match(%r{^(test|spec|features)/}) }
+    .reject { |f| f.match(/^\.|package\.json/) }
   spec.bindir        = 'exe'
   spec.executables   =
     spec
