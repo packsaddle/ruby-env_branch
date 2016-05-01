@@ -25,10 +25,10 @@ module EnvBranch
     #
     #   @yield user defined block
     #   @return [Base] Branch information object
-    def initialize(&block)
+    def initialize
       @branch_name =
         if block_given?
-          block.call || fetch_branch_name
+          yield || fetch_branch_name
         else
           fetch_branch_name
         end
