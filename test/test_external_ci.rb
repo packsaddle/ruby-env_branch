@@ -27,7 +27,7 @@ module EnvBranch
           EnvBranch.new.branch? == true
         end
       end
-      test '#pull_request_id' do
+      test '#branch_name' do
         assert do
           EnvBranch.new.branch_name == branch_name
         end
@@ -49,7 +49,7 @@ module EnvBranch
           EnvBranch.new.branch? == true
         end
       end
-      test '#pull_request_id' do
+      test '#branch_name' do
         assert do
           EnvBranch.new.branch_name == branch_name
         end
@@ -71,7 +71,7 @@ module EnvBranch
           EnvBranch.new.branch? == true
         end
       end
-      test '#pull_request_id' do
+      test '#branch_name' do
         assert do
           EnvBranch.new.branch_name == branch_name
         end
