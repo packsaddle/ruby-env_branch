@@ -1,3 +1,13 @@
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/packsaddle/ruby-env_branch/compare/v1.1.0...v1.2.0) (2016-05-07)
+
+
+### Features
+
+* **ci:** support git plugin for jenkins([19eb954](https://github.com/packsaddle/ruby-env_branch/commit/19eb954)), closes [#23](https://github.com/packsaddle/ruby-env_branch/issues/23)
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/packsaddle/ruby-env_branch/compare/v1.0.0...v1.1.0) (2016-05-07)
 
