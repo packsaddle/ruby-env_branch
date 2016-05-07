@@ -1,3 +1,13 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/packsaddle/ruby-env_branch/compare/v1.0.0...v1.1.0) (2016-05-07)
+
+
+### Features
+
+* **ci:** support github pull request builder plugin([ca0075c](https://github.com/packsaddle/ruby-env_branch/commit/ca0075c)), closes [#21](https://github.com/packsaddle/ruby-env_branch/issues/21)
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/packsaddle/ruby-env_branch/compare/v0.2.2...v1.0.0) (2016-05-01)
 
