@@ -71,6 +71,9 @@ And more *[details][docs-url]*.
 * GitHub pull request builder plugin (for Jenkins)
     * `ENV['ghprbSourceBranch']`
     * [Environment Variables](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+pull+request+builder+plugin#GitHubpullrequestbuilderplugin-EnvironmentVariables)
+* Git Plugin (for Jenkins)
+    * `ENV['GIT_BRANCH']`
+    * [Environment variables](https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin#GitPlugin-Environmentvariables)
 
 
 ## Related

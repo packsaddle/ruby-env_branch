@@ -42,6 +42,8 @@ module EnvBranch
     #   ENV['CIRCLE_BRANCH']
     # GitHub pull request builder plugin (for Jenkins):
     #   ENV['ghprbSourceBranch']
+    # Git plugin (for Jenkins):
+    #   ENV['GIT_BRANCH']
     #
     # @return [String, nil] branch name or nil
     #
@@ -54,6 +56,8 @@ module EnvBranch
     #   Environment variables - CircleCI
     # @see https://wiki.jenkins-ci.org/display/JENKINS/GitHub+pull+request+builder+plugin#GitHubpullrequestbuilderplugin-EnvironmentVariables
     #   Environment Variables
+    # @see https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin#GitPlugin-Environmentvariables
+    #   Environment variables
     def fetch_branch_name
       if ENV['TRAVIS_BRANCH'] && !ENV['TRAVIS_BRANCH'].empty?
         ENV['TRAVIS_BRANCH']
@@ -61,6 +65,8 @@ module EnvBranch
         ENV['CIRCLE_BRANCH']
       elsif ENV['ghprbSourceBranch'] && !ENV['ghprbSourceBranch'].empty?
         ENV['ghprbSourceBranch']
+      elsif ENV['GIT_BRANCH'] && !ENV['GIT_BRANCH'].empty?
+        ENV['GIT_BRANCH']
       end
     end
 
