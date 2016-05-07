@@ -77,5 +77,27 @@ module EnvBranch
         end
       end
     end
+
+    sub_test_case 'Git plugin' do
+      branch_name = 'your-branch'
+      setup do
+        ENV['GIT_BRANCH'] = branch_name
+      end
+
+      teardown do
+        ENV.delete 'GIT_BRANCH'
+      end
+
+      test '#branch?' do
+        assert do
+          EnvBranch.new.branch? == true
+        end
+      end
+      test '#branch_name' do
+        assert do
+          EnvBranch.new.branch_name == branch_name
+        end
+      end
+    end
   end
 end
