@@ -23,8 +23,10 @@ module EnvBranch
     def stash_env_branch
       @original_travis_branch = ENV['TRAVIS_BRANCH']
       @original_circle_branch = ENV['CIRCLE_BRANCH']
+      @original_github_pull_request_builder_plugin_branch = ENV['ghprbSourceBranch']
       ENV.delete 'TRAVIS_BRANCH'
       ENV.delete 'CIRCLE_BRANCH'
+      ENV.delete 'ghprbSourceBranch'
     end
 
     # Restore original environment variables for branch.
@@ -46,8 +48,10 @@ module EnvBranch
     def restore_env_branch
       original_travis_branch = (defined?(@original_travis_branch) && @original_travis_branch) || nil
       original_circle_branch = (defined?(@original_circle_branch) && @original_circle_branch) || nil
+      original_github_pull_request_builder_plugin_branch = (defined?(@original_github_pull_request_builder_plugin_branch) && @original_github_pull_request_builder_plugin_branch) || nil
       ENV['TRAVIS_BRANCH'] = original_travis_branch
       ENV['CIRCLE_BRANCH'] = original_circle_branch
+      ENV['ghprbSourceBranch'] = original_github_pull_request_builder_plugin_branch
     end
   end
 end

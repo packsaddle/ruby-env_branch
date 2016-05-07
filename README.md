@@ -68,6 +68,9 @@ And more *[details][docs-url]*.
 * CircleCI
     * `ENV['CIRCLE_BRANCH']`
     * [Environment variables - CircleCI](https://circleci.com/docs/environment-variables#build-details)
+* GitHub pull request builder plugin (for Jenkins)
+    * `ENV['ghprbSourceBranch']`
+    * [Environment Variables](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+pull+request+builder+plugin#GitHubpullrequestbuilderplugin-EnvironmentVariables)
 
 
 ## Related
