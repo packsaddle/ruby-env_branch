@@ -40,6 +40,8 @@ module EnvBranch
     #   ENV['TRAVIS_BRANCH']
     # circleci.com:
     #   ENV['CIRCLE_BRANCH']
+    # bitrise.io:
+    #   ENV['BITRISE_GIT_BRANCH']
     # GitHub pull request builder plugin (for Jenkins):
     #   ENV['ghprbSourceBranch']
     # Git plugin (for Jenkins):
@@ -54,6 +56,8 @@ module EnvBranch
     #   Environment Variables - Travis CI
     # @see https://circleci.com/docs/environment-variables#build-details
     #   Environment variables - CircleCI
+    # @see https://devcenter.bitrise.io/faq/available-environment-variables/
+    #   Environment variables - Bitrise
     # @see https://wiki.jenkins-ci.org/display/JENKINS/GitHub+pull+request+builder+plugin#GitHubpullrequestbuilderplugin-EnvironmentVariables
     #   Environment Variables
     # @see https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin#GitPlugin-Environmentvariables
@@ -63,6 +67,8 @@ module EnvBranch
         ENV['TRAVIS_BRANCH']
       elsif ENV['CIRCLE_BRANCH'] && !ENV['CIRCLE_BRANCH'].empty?
         ENV['CIRCLE_BRANCH']
+      elsif ENV['BITRISE_GIT_BRANCH'] && !ENV['BITRISE_GIT_BRANCH'].empty?
+        ENV['BITRISE_GIT_BRANCH']
       elsif ENV['ghprbSourceBranch'] && !ENV['ghprbSourceBranch'].empty?
         ENV['ghprbSourceBranch']
       elsif ENV['GIT_BRANCH'] && !ENV['GIT_BRANCH'].empty?
