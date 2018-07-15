@@ -1,3 +1,13 @@
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/packsaddle/ruby-env_branch/compare/v1.2.0...v1.3.0) (2018-07-15)
+
+
+### Features
+
+* **ci:** support bitrise([7a7a24e](https://github.com/packsaddle/ruby-env_branch/commit/7a7a24e))
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/packsaddle/ruby-env_branch/compare/v1.1.0...v1.2.0) (2016-05-07)
 
