@@ -1,6 +1,6 @@
 # EnvBranch
 
-[![Gem version][gem-image]][gem-url] [![Travis-CI Status][travis-image]][travis-url] [![yard docs][docs-image]][docs-url]
+[![Gem version][gem-image]][gem-url] [![CI Status][ci-image]][ci-url] [![yard docs][docs-image]][docs-url]
 
 > Get BRANCH_NAME from environment variables.
 
@@ -123,8 +123,8 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/packsa
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-[travis-url]: https://travis-ci.org/packsaddle/ruby-env_branch
-[travis-image]: https://img.shields.io/travis/packsaddle/ruby-env_branch/master.svg?style=flat-square&label=build%20%28linux%29
+[ci-url]: https://circleci.com/gh/packsaddle/ruby-env_branch
+[ci-image]: https://img.shields.io/circleci/build/github/packsaddle/ruby-env_branch?style=flat-square
 [gem-url]: https://rubygems.org/gems/env_branch
 [gem-image]: http://img.shields.io/gem/v/env_branch.svg?style=flat-square
 [docs-url]: http://www.rubydoc.info/gems/env_branch
